@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Travel Diary</title>
+    <meta charset="UTF-8">
+    <style>
+        .top-menu{
+            background-color: darkblue;
+            padding: 24px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-size: 24px;
+        }
+        .top-links{
+            color:white;
+            text-decoration: none;
+        }
+        #menu{
+            margin: 24px;
+            color:white;
+            padding: 24px 10px 24px 10px;
+        }
+        .main-image{
+            width: 100%;
+            height: 500px;
+            margin: 0%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .bottom-menu{
+            text-align: center;
+            color:darkred;
+            background-color: lightblue;
+            padding: 10px;
+            margin-top: 24px;
+        }
+        .text-desc{
+            width: 800px;
+            height: 100%;
+            text-align: justify;
+            background-color: whitesmoke;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            line-height: 30px;
+        }
+
+        #menu:hover{
+            background-color: black;
+            color: red;
+        }
+
+        #icon{
+        width: 50px;
+        height: 50px;
+        padding: 16px 32px 16px 32px;
+        }
+
+        form{
+        border-color: #ccc;
+        border-width: 1px;
+        border-style: solid;
+        margin: auto;
+        width: 500px;
+        background: white;
+        }
+
+        #fields{
+        padding: 80px 80px 40px 80px;
+        text-align: center;
+        }
+
+        .input{
+        font-size: 18px;
+        padding-bottom: 12px;
+        margin-bottom: 36px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        outline: none;
+        }
+
+        #submit{
+        background-color: #0056ff;
+        padding: 12px 24px 12px 24px;
+        font-size: 18px;
+        color: white;
+        border: none;
+        }
+
+        h1{
+        font-size: 32px;
+        padding-top: 56px;
+        padding-bottom: 32px;
+        text-align: center;
+        }
+
+        #submit:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body style="margin: 0; background-color:whitesmoke;">
+    <div class="top-menu">
+        <span id="menu"><a href="index.html" class="top-links">Trips</a></span>
+        <span id="menu"><a href="about.html" class="top-links">About</a></span>
+        <span id="menu"><a href="contact.html" class="top-links">Contact</a></span>
+    </div>
+    <div>
+        <img class="main-image" src="https://www.iamsterdam.com/media/canals-and-cityscapes/g-c-gracht-merijn-roubroeks.jpg" alt="Amsterdam">
+    </div>
+    <form>
+        <h1>Contact us</h1>
+        <div style="background-color: #f2f6ff;">
+            <a href="https://www.google.com"><img src="http://pluspng.com/img-png/google-logo-png-open-2000.png" alt="Google Logo" id="icon"></a>
+            <a href="https://www.facebook.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png" alt="Facebook Logo" id="icon"></a>
+            <a href="https://www.github.com"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="Github Logo" id="icon"></a>
+            <a href="https://www.linkedin.com"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/linkedin_circle-512.png" alt="Linked In Logo" id="icon"></a>
+        </div>
+
+        <div id="fields">
+            <input class="input" type="text" placeholder="Full Name" name="full-name" autofocus required/><br>
+            <input class="input" type="email" placeholder="Email" name="email" required/><br>
+            <input class="input" type="number" placeholder="Contact Number" name="contact-number" required maxlength="15"/><br>
+            <textarea class="input" name="answer" rows="10" cols="30"placeholder="Comments"></textarea>
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+    <footer class="bottom-menu">
+            <p>Created by: Pavan Kumar Akula</p>
+            <p>Contact information: <a href="mailto:test@testify.com">test@testify.com</a>.</p>
+    </footer>
+    <p style="text-align: center;"><strong>Note:</strong> The footer tag is not supported in Internet Explorer 8 and earlier versions.</p>
+</body>
+</html>
